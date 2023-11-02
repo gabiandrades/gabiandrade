@@ -377,7 +377,10 @@ nav li {
         padding: 0 1em;
     }
     .contact {
-        padding: 3em;
+        padding: 2.5em;
+    }
+    .contact-wrapper {
+        padding: 3em 0.5em;
     }
     .hero {
         flex-direction: column;
