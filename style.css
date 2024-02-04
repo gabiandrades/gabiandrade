@@ -15,7 +15,7 @@ html {
     scroll-padding-top: 5em;
 }
 :root {
-    --clr-neutral: #F2F2F2;
+    --clr-neutral: #F5FaFc;
     --clr-primary-1: #373834;
     --clr-primary-2: #706E64;
     --clr-primary-3: #BFB6B4;
@@ -88,7 +88,7 @@ ul {
     font-size: 1.5em;
     color: var(--clr-primary-3);
 }
---------------------------------*/
+/*--------------------------------*/
 
 /* header */
 header {
@@ -343,6 +343,76 @@ nav li {
     margin-top: -1.9em;
     color: var(--clr-accent-2);
     text-shadow: 1px 1px 15px rgba(0,0,0,0.7);
+}
+
+/* portfolio
+----------------------------*/
+.portfolio-header {
+    padding-top: 3.5em;
+    /*position: sticky;
+    top: 0;
+    background-color: var(--clr-neutral);*/
+}
+.portfolio-header li,
+.portfolio-header a {
+    display: inline-block;
+    font-family: var(--ff-base);
+    font-size: 0.85em;
+}
+.portfolio-header p {
+    padding-top: 1em;
+}
+.portfolio-info {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.portfolio-info p {
+    font-size: var(--fs-21);
+    font-family: var(--ff-accent);
+}
+.portfolio-header .toolbox {
+    justify-content: center;
+}
+.portfolio-divider {
+    height: 1px;
+    background-color: var(--clr-primary-3);
+    margin-top: 0.2em;
+}
+.portfolio-subtitle {
+    padding: 2.5em 0 0.75em 0;
+}
+.portfolio img {
+    width: 100%;
+    padding: 3em 0;
+}
+.portfolio-card {
+    padding: 2em 0;
+}
+.more-projects-grid {
+    display: grid;
+    /*grid-template-areas: 
+    "title title"
+    "job image"
+    "toolbox image"
+    "description image"
+    "cta image";*/
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 2em 0 7em 0;
+}
+.more-projects {
+    padding: 5em 0;
+}
+.more-projects-card {
+    background-color: var(--clr-neutral);
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+    border-radius: 16px;
+    padding: 1.5em 1em;
+}
+.more-projects-card img {
+    width: 100%;
+    border-radius: 16px;
 }
 
 /* breakpoints*/
